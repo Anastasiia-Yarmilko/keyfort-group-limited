@@ -1,0 +1,32 @@
+{
+  "name": "keyfort-group-limited",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
+    "build": "webpack --env.mode production --config ./webpack/config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiia-Yarmilko/keyfort-group-limited.git"
+  },
+  "keywords": [],
+  "author": "ANASTASIIA_YARMILKO <anastasiia.yarm@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasiia-Yarmilko/keyfort-group-limited/issues"
+  },
+  "homepage": "https://github.com/Anastasiia-Yarmilko/keyfort-group-limited#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.2.3",
+    "handlebars": "^4.7.7",
+    "sass-loader": "^12.1.0"
+  },
+  "dependencies": {
+    "webpack": "^5.56.1"
+  }
+}
